@@ -1,0 +1,7 @@
+# Optional isolated evaluator environment; core harness stays standard-library-only.
+ragas==0.4.3
+# Keep the legacy optional VertexAI import used by this RAGAS release available.
+langchain-community>=0.3.0,<0.4
+langchain-core>=0.3.0,<1
+langchain>=0.3.0,<1
+langchain-openai>=0.3.0,<1

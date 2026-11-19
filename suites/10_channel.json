@@ -1,0 +1,138 @@
+[
+  {
+    "id": "UAT-001",
+    "suite": "channel",
+    "category": "Webhook sender binding",
+    "turns": [],
+    "expected": "Valid Meta signature maps to authenticated sender; invalid signatures are rejected.",
+    "requirements": [
+      "NFR-02"
+    ],
+    "metrics": [
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-002",
+    "suite": "channel",
+    "category": "WhatsApp interactive rendering",
+    "turns": [],
+    "expected": "Verify quick replies, lists, CTA text and mobile rendering on a test handset.",
+    "requirements": [
+      "STAGE-4"
+    ],
+    "metrics": [
+      "channel_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-003",
+    "suite": "channel",
+    "category": "Payment redirects",
+    "turns": [],
+    "expected": "Verify sandbox hosted gateway redirect and return on mobile WhatsApp.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "channel_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-004",
+    "suite": "channel",
+    "category": "Typing and channel latency",
+    "turns": [],
+    "expected": "Measure typing within 1 second and full WhatsApp end-to-end P95 using webhook/channel timestamps.",
+    "requirements": [
+      "NFR-03"
+    ],
+    "metrics": [
+      "channel_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-005",
+    "suite": "channel",
+    "category": "Application log redaction",
+    "turns": [],
+    "expected": "Inspect application, APIM, tool and LLM telemetry for MSISDN, ID, PUK, ICCID and payment data exposure.",
+    "requirements": [
+      "NFR-01"
+    ],
+    "metrics": [
+      "pii_log_redaction"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-006",
+    "suite": "channel",
+    "category": "Handoff channel delivery",
+    "turns": [],
+    "expected": "Verify a real test-agent queue receives the correct conversation context.",
+    "requirements": [
+      "NFR-06"
+    ],
+    "metrics": [
+      "channel_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-007",
+    "suite": "channel",
+    "category": "Invoice link expiry",
+    "turns": [],
+    "expected": "Verify short-lived signed invoice link expires and is subject-bound.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "policy_compliance"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  },
+  {
+    "id": "UAT-008",
+    "suite": "channel",
+    "category": "APIM throttling",
+    "turns": [],
+    "expected": "Use the configured QA throttle fixture; verify 429, Retry-After and circuit breaker recovery within approved load budget.",
+    "requirements": [
+      "NFR-04"
+    ],
+    "metrics": [
+      "graceful_degradation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "manual_only": true
+  }
+]

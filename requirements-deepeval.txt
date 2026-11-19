@@ -1,0 +1,5 @@
+# Isolated environment; avoid changing the working Morpheus or RAGAS environments.
+deepeval==3.8.4
+openai==2.54.0
+httpx==0.28.1
+pydantic==2.14.3

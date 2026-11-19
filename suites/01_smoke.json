@@ -1,0 +1,96 @@
+[
+  {
+    "id": "API-001",
+    "suite": "smoke",
+    "category": "Method handling",
+    "method": "HEAD",
+    "body": null,
+    "expected_status": [
+      405
+    ],
+    "metrics": [],
+    "requirements": [
+      "STAGE-2"
+    ],
+    "expected": "Reject HEAD and advertise POST."
+  },
+  {
+    "id": "API-002",
+    "suite": "smoke",
+    "category": "Required-field validation",
+    "body": {},
+    "expected_status": [
+      422
+    ],
+    "missing_fields": [
+      "message",
+      "conversationId",
+      "msisdn"
+    ],
+    "metrics": [],
+    "requirements": [
+      "STAGE-2"
+    ],
+    "expected": "Reject empty object with required-field details."
+  },
+  {
+    "id": "API-003",
+    "suite": "smoke",
+    "category": "Partial schema validation",
+    "body": {
+      "message": "Hello"
+    },
+    "expected_status": [
+      422
+    ],
+    "missing_fields": [
+      "conversationId",
+      "msisdn"
+    ],
+    "metrics": [],
+    "requirements": [
+      "STAGE-2"
+    ],
+    "expected": "Reject partial input. Inspect all reported errors without assuming complete schema."
+  },
+  {
+    "id": "API-004",
+    "suite": "smoke",
+    "category": "Partial schema validation",
+    "body": {
+      "conversationId": "INVALID_QA_VALIDATION"
+    },
+    "expected_status": [
+      422
+    ],
+    "missing_fields": [
+      "message",
+      "msisdn"
+    ],
+    "metrics": [],
+    "requirements": [
+      "STAGE-2"
+    ],
+    "expected": "Reject partial input. Inspect all reported errors without assuming complete schema."
+  },
+  {
+    "id": "API-005",
+    "suite": "smoke",
+    "category": "Partial schema validation",
+    "body": {
+      "msisdn": ""
+    },
+    "expected_status": [
+      422
+    ],
+    "missing_fields": [
+      "message",
+      "conversationId"
+    ],
+    "metrics": [],
+    "requirements": [
+      "STAGE-2"
+    ],
+    "expected": "Reject partial input. Inspect all reported errors without assuming complete schema."
+  }
+]

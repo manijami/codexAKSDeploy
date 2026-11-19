@@ -1,0 +1,36 @@
+{
+  "purpose": "Required single evaluator configuration for later grading of this selected batch; not executed or automatically consumed by the capture runner.",
+  "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "model_configuration_source": "MORPHEUS_EVAL_MODEL",
+  "generation_parameters": {
+    "max_tokens": 4096,
+    "extra_body": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "temperature": 0.01,
+    "top_p": 0.1
+  },
+  "both_accuracy_judges_required": true,
+  "sdk_http_retries": 0,
+  "structured_output_attempts": 1,
+  "accuracy_attempts": 1,
+  "reference_status": "REQUIRES_BUSINESS_REVIEW",
+  "grades_provisional": true,
+  "unsupported_metrics": {
+    "context_precision": null,
+    "context_recall": null,
+    "retrieval_relevancy": null,
+    "faithfulness": null,
+    "groundedness": null,
+    "safety": null
+  },
+  "future_grading_requirements": [
+    "Validate frozen catalogue digest and exact attempt/response digest before scoring.",
+    "Record effective wire parameters, model, package versions and profile digest with every evaluated attempt.",
+    "Reject configuration/model drift rather than silently changing settings.",
+    "Retain null if either accuracy judge fails; preserve retry history.",
+    "The existing ten-case pilot grader needs explicit expanded-catalogue support before use; no grading command is proposed here."
+  ]
+}

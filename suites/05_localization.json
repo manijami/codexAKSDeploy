@@ -1,0 +1,140 @@
+[
+  {
+    "id": "LOC-001",
+    "suite": "localization",
+    "category": "South African vernacular",
+    "turns": [
+      {
+        "message": "Eita, how much data do I have left before it finishes?"
+      }
+    ],
+    "expected": "Recognize the intent and reply clearly; native reviewer must validate wording and correctness.",
+    "requirements": [
+      "NFR-05",
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "LOC-002",
+    "suite": "localization",
+    "category": "South African vernacular",
+    "turns": [
+      {
+        "message": "Howzit, please check my airtime."
+      }
+    ],
+    "expected": "Recognize the intent and reply clearly; native reviewer must validate wording and correctness.",
+    "requirements": [
+      "NFR-05",
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "LOC-003",
+    "suite": "localization",
+    "category": "South African vernacular",
+    "turns": [
+      {
+        "message": "Sawubona, please show my balance."
+      }
+    ],
+    "expected": "Recognize the intent and reply clearly; native reviewer must validate wording and correctness.",
+    "requirements": [
+      "NFR-05",
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "LOC-004",
+    "suite": "localization",
+    "category": "South African vernacular",
+    "turns": [
+      {
+        "message": "Molo, please help with my data balance."
+      }
+    ],
+    "expected": "Recognize the intent and reply clearly; native reviewer must validate wording and correctness.",
+    "requirements": [
+      "NFR-05",
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "LOC-005",
+    "suite": "localization",
+    "category": "South African vernacular",
+    "turns": [
+      {
+        "message": "Goeienaand, hoeveel data het ek oor?"
+      }
+    ],
+    "expected": "Recognize the intent and reply clearly; native reviewer must validate wording and correctness.",
+    "requirements": [
+      "NFR-05",
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "LOC-006",
+    "suite": "localization",
+    "category": "South African vernacular",
+    "turns": [
+      {
+        "message": "Dumela, please check my airtime."
+      }
+    ],
+    "expected": "Recognize the intent and reply clearly; native reviewer must validate wording and correctness.",
+    "requirements": [
+      "NFR-05",
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  }
+]

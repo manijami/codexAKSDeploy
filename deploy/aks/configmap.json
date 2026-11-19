@@ -1,0 +1,11 @@
+{
+  "apiVersion": "v1",
+  "kind": "ConfigMap",
+  "metadata": {
+    "name": "mtn-whatsapp-qa-config",
+    "namespace": "mtn-whatsapp-qa"
+  },
+  "data": {
+    "local.json": "{\n  \"response_mapping_confirmed\": true,\n  \"conversation_mode\": \"client_uuid\",\n  \"snapshot_paths\": [\n    \"response.message\"\n  ],\n  \"delta_paths\": [],\n  \"max_live_requests\": 20,\n  \"min_interval_seconds\": 0.5,\n  \"timeout_seconds\": 45,\n  \"read_timeout_seconds\": 10,\n  \"writes_fixture_ready\": false,\n  \"payment_sandbox_ready\": false\n}"
+  }
+}

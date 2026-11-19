@@ -1,0 +1,95 @@
+[
+  {
+    "id": "RES-001",
+    "suite": "resilience",
+    "category": "Downstream failure handling",
+    "turns": [
+      {
+        "message": "Check my credit limit."
+      }
+    ],
+    "expected": "Backend timeout greater than 4 seconds: empathetic fallback, no figures or stack trace.",
+    "requirements": [
+      "NFR-04",
+      "NFR-06"
+    ],
+    "metrics": [
+      "graceful_degradation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "billing_timeout"
+  },
+  {
+    "id": "RES-002",
+    "suite": "resilience",
+    "category": "Downstream failure handling",
+    "turns": [
+      {
+        "message": "My balances"
+      }
+    ],
+    "expected": "Backend HTTP 5xx: no hallucinated result; retain correlation trace.",
+    "requirements": [
+      "NFR-04",
+      "NFR-06"
+    ],
+    "metrics": [
+      "graceful_degradation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "billing_5xx"
+  },
+  {
+    "id": "RES-003",
+    "suite": "resilience",
+    "category": "Downstream failure handling",
+    "turns": [
+      {
+        "message": "How does data rollover work?"
+      }
+    ],
+    "expected": "Search unavailable: abstain from unsourced policy; explain temporary issue.",
+    "requirements": [
+      "NFR-04",
+      "NFR-06"
+    ],
+    "metrics": [
+      "graceful_degradation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "search_timeout"
+  },
+  {
+    "id": "RES-004",
+    "suite": "resilience",
+    "category": "Downstream failure handling",
+    "turns": [
+      {
+        "message": "Check my credit limit.",
+        "metrics": []
+      },
+      {
+        "message": "Check my credit limit."
+      }
+    ],
+    "expected": "Two consecutive backend failures trigger human handoff with context.",
+    "requirements": [
+      "NFR-04",
+      "NFR-06"
+    ],
+    "metrics": [
+      "graceful_degradation",
+      "handoff_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "two_tool_failures"
+  }
+]

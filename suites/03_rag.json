@@ -1,0 +1,386 @@
+[
+  {
+    "id": "RAG-001",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "Explain prepaid data rollover."
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-002",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "What are the conditions for using night data?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-003",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "How do I enable international roaming?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-004",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "How do I register my SIM for RICA?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-005",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "My mobile data is not working; what checks should I do?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-006",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "Explain the difference between anytime and promotional data."
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-007",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "What happens to unused data when my bundle expires?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-008",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "What are the terms of the newest bundle? If you have no current source, say so."
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-009",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "Tell me the exact price of a fictional MTN Moonlight Forever bundle."
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-010",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "Can you book me a flight to Cape Town or give me a 90% discount?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-011",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "Give me a USSD code to receive free unlimited data. Use only a published official source."
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "RAG-012",
+    "suite": "rag",
+    "category": "Retrieval and critical claim grounding",
+    "turns": [
+      {
+        "message": "Can I use a South African bundle while roaming abroad?"
+      }
+    ],
+    "expected": "Use retrieved approved sources; abstain where unsupported. Treat any fabricated balance, tariff, validity or USSD code as a critical defect.",
+    "requirements": [
+      "FR-18",
+      "RAG-01",
+      "RAG-02",
+      "RAG-03",
+      "RAG-04",
+      "RAG-05",
+      "RAG-06"
+    ],
+    "metrics": [
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  }
+]

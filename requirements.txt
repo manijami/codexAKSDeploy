@@ -1,0 +1,2 @@
+# Core transport, reports and evidence scorer use Python 3.10+ standard library only.
+# No pip install is required for the core project.

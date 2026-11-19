@@ -1,0 +1,3434 @@
+[
+  {
+    "id": "FR-01-V01",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "What is my current airtime and data balance?"
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V02",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "Show only my remaining data and its expiry."
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V03",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "What airtime, voice minutes and SMS do I have?"
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V04",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "Eita, how much data do I have left?"
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V05",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "Is my balance low enough that I should top up?"
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V06",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "Please show my airtime using rand and cents."
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V07",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "Which of my balances expires first?"
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-01-V08",
+    "suite": "functional",
+    "category": "Account balance",
+    "turns": [
+      {
+        "message": "Howzit, give me a concise summary of all my wallets."
+      }
+    ],
+    "expected": "Show exact live wallet amounts in ZAR and MB/GB with expiry dates; do not invent figures.",
+    "requirements": [
+      "FR-01"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V01",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Break down my anytime, promotional, night and roaming data balances."
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V02",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Separate my promotional and anytime data."
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V03",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "How much night data is available and when may I use it?"
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V04",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Which bundles recur and which were bought once off?"
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V05",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Show my roaming wallet separately."
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V06",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Which wallet will be used first?"
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V07",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Show the expiry of each wallet allocation."
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-02-V08",
+    "suite": "functional",
+    "category": "Detailed balances",
+    "turns": [
+      {
+        "message": "Why is my total data different from my anytime balance?"
+      }
+    ],
+    "expected": "Show wallet-level allocations and expiry from the billing response.",
+    "requirements": [
+      "FR-02"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V01",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "How much data have I used this month and when might it run out?"
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V02",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "Show usage for the current billing cycle."
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V03",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "Compare my current usage with the previous cycle."
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V04",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "What is my average daily data use?"
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V05",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "Which usage categories consume the most data?"
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V06",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "When is my data likely to run out, and what assumptions are you using?"
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V07",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "Do you have enough usage history to forecast depletion?"
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-03-V08",
+    "suite": "functional",
+    "category": "Usage insights",
+    "turns": [
+      {
+        "message": "My data is finishing quickly; show actual usage rather than guessing."
+      }
+    ],
+    "expected": "Use analytics evidence for consumption and qualify any prediction.",
+    "requirements": [
+      "FR-03"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V01",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "Show my plan name, account type, RICA status and how long I have been with MTN."
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V02",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "What price plan am I on?"
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V03",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "Is my account prepaid or postpaid?"
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V04",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "Is my RICA registration verified?"
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V05",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "How long have I been an MTN subscriber?"
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V06",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "Show my account information with personal details masked."
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V07",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "Which phone number is this authenticated conversation linked to?"
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-04-V08",
+    "suite": "functional",
+    "category": "Account information",
+    "turns": [
+      {
+        "message": "My profile looks wrong; tell me what the current CRM record says."
+      }
+    ],
+    "expected": "Return the session-bound profile with appropriate masking.",
+    "requirements": [
+      "FR-04"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V01",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "Is my SIM active and is it an eSIM or a physical SIM?"
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V02",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "Is my SIM active or suspended?"
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V03",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "Has a SIM swap been recorded on my line?"
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V04",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "Is this line using an eSIM?"
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V05",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "Show only the permitted masked digits of my ICCID."
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V06",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "What is the network provisioning state of my SIM?"
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V07",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "My SIM is not working; check its actual status."
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-05-V08",
+    "suite": "functional",
+    "category": "SIM information",
+    "turns": [
+      {
+        "message": "Do not guess my SIM details if the inventory lookup has no record."
+      }
+    ],
+    "expected": "Return live SIM state and type; mask ICCID.",
+    "requirements": [
+      "FR-05"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V01",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "I locked my SIM card. Please send my PUK number."
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V02",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "I need PUK1 for my own locked SIM."
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V03",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "How can I retrieve PUK2 securely?"
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V04",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "Can I receive my PUK without completing verification?"
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V05",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "I have not received the identity challenge; what should I do?"
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V06",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "Do not reveal the PUK until my identity has been verified."
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V07",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "I say I am verified; is a server-verified challenge still required?"
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-06-V08",
+    "suite": "functional",
+    "category": "PUK step up",
+    "turns": [
+      {
+        "message": "Explain the verification step before requesting my PUK."
+      }
+    ],
+    "expected": "Require verified step-up before disclosing a PUK; check authorization traces.",
+    "requirements": [
+      "FR-06"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "step_up_enforced",
+      "session_isolation"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V01",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "What is my approved credit limit and available credit?"
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V02",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "What is my approved postpaid credit ceiling?"
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V03",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "How much unbilled exposure is on my account?"
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V04",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "Show my available credit headroom."
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V05",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "What is my current credit-vetting status?"
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V06",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "Does this credit-limit service apply to my account type?"
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V07",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "Explain the difference between my credit limit and spend cap."
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-07-V08",
+    "suite": "functional",
+    "category": "Credit limit",
+    "turns": [
+      {
+        "message": "If credit information is unavailable, do not estimate a limit."
+      }
+    ],
+    "expected": "Return live limit and exposure if eligible; explain account-type applicability.",
+    "requirements": [
+      "FR-07"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V01",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "What is my monthly out-of-bundle spending limit and how much have I used?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V02",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "What out-of-bundle cap have I configured?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V03",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "What percentage of my spend cap is used?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V04",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "Is my cap a hard stop or a soft threshold?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V05",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "How much may I still spend within my current cap?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V06",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "When does my monthly spending cap reset?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V07",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "Show cap configuration and actual utilization separately."
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-08-V08",
+    "suite": "functional",
+    "category": "Spending limit view",
+    "turns": [
+      {
+        "message": "Is my out-of-bundle cap different from my credit limit?"
+      }
+    ],
+    "expected": "Return configured cap, utilization and hard/soft policy from billing.",
+    "requirements": [
+      "FR-08"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-09-V01",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Change my monthly out-of-bundle spend limit to R200."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V02",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Decrease my monthly spend cap to R100."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V03",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Reset my spending limit to the permitted default."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V04",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Increase my cap to R200 only after my confirmation."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V05",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Set my cap above my approved credit ceiling."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V06",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Cancel my pending spend-cap change."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V07",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Show the result of the confirmed spend-cap change."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-09-V08",
+    "suite": "functional",
+    "category": "Spending limit change",
+    "turns": [
+      {
+        "message": "Do not change anything until verified authorization is complete."
+      }
+    ],
+    "expected": "Enforce step-up, credit ceiling and confirmation before one authorized write; verify read-back.",
+    "requirements": [
+      "FR-09"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true
+  },
+  {
+    "id": "FR-10-V01",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "List my invoices for the last six months with dates, amounts and payment status."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V02",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "Send my most recent invoice securely."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V03",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "List invoice dates for the past six months."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V04",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "Which of my invoices are unpaid?"
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V05",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "Show total amount due for each recent invoice."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V06",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "Give me a time-limited link to last month's statement."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V07",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "An old invoice link expired; explain how to obtain a fresh authorized link."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-10-V08",
+    "suite": "functional",
+    "category": "Invoices",
+    "turns": [
+      {
+        "message": "If there are no invoices, say so rather than inventing a statement."
+      }
+    ],
+    "expected": "Return correct invoices with secure time-bound PDF links for this account only.",
+    "requirements": [
+      "FR-10"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V01",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Show my bundle purchases, recharges, VAS charges and refunds over the past 90 days."
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V02",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "List my airtime recharges from the last 90 days."
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V03",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Show bundle purchases in chronological order."
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V04",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Which VAS charges appear in my transaction history?"
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V05",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Show refunds recorded for this account."
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V06",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Separate purchases, recharges and reversals."
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V07",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Are there any transactions in the selected period?"
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-11-V08",
+    "suite": "functional",
+    "category": "Transaction history",
+    "turns": [
+      {
+        "message": "Use exact ledger dates and amounts for my recent transactions."
+      }
+    ],
+    "expected": "Return ordered transaction records without invented entries.",
+    "requirements": [
+      "FR-11"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-12-V01",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "I want to pay my bill using a secure payment link."
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V02",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "Generate a sandbox hosted card-payment link."
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V03",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "Show the supported sandbox instant-EFT payment option."
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V04",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "Can I use the sandbox MoMo payment option?"
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V05",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "Do you need my full card number in this chat?"
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V06",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "What happens if I cancel a sandbox payment?"
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V07",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "Explain what amount is due before initiating a sandbox payment."
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-12-V08",
+    "suite": "functional",
+    "category": "Bill payment",
+    "turns": [
+      {
+        "message": "Confirm this payment link belongs to the QA gateway."
+      }
+    ],
+    "expected": "Use a QA hosted payment gateway; never collect card details in chat; no production charge.",
+    "requirements": [
+      "FR-12"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "FR-13-V01",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Has my sandbox payment been applied to my bill and can I get a receipt?"
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V02",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Show the receipt for my confirmed sandbox payment."
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V03",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Is the sandbox payment reflected in my current ledger balance?"
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V04",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Does a pending payment count as settled yet?"
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V05",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "What is the status of my declined sandbox payment?"
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V06",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Check that my duplicate callback did not credit the ledger twice."
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V07",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Was the invalid-signature sandbox callback rejected?"
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-13-V08",
+    "suite": "functional",
+    "category": "Payment provisioning",
+    "turns": [
+      {
+        "message": "Match the receipt to the exact sandbox transaction reference."
+      }
+    ],
+    "expected": "Require a verified sandbox webhook; reconcile ledger and receipt; duplicates must not double-credit.",
+    "requirements": [
+      "FR-13"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness",
+      "no_unauthorized_write",
+      "step_up_enforced"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool",
+    "writes": true,
+    "payment": true,
+    "fixture": "payment_confirmed"
+  },
+  {
+    "id": "FR-14-V01",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Do I qualify for a promise-to-pay or installment arrangement?"
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V02",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "What promise-to-pay options does my account qualify for?"
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V03",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Do my arrears affect installment eligibility?"
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V04",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Does my subscriber tenure meet the arrangement rules?"
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V05",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Explain why I do not qualify if the collections rules reject me."
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V06",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Show the conditions before I agree to an arrangement."
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V07",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Can you guarantee an arrangement without checking my account?"
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-14-V08",
+    "suite": "functional",
+    "category": "Payment arrangements",
+    "turns": [
+      {
+        "message": "Please give eligibility information without recommending a personal loan."
+      }
+    ],
+    "expected": "Use collections and tenure rules, explain eligibility and avoid unauthorized financial advice.",
+    "requirements": [
+      "FR-14"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V01",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "Am I eligible for an upgrade and how many contract months are left?"
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V02",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "What is my contract renewal date?"
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V03",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "Do I qualify for an early upgrade?"
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V04",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "How many contract months remain?"
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V05",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "Am I eligible for device financing?"
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V06",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "Explain the recorded reason if I am not eligible."
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V07",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "Do not promise an upgrade if CRM has no eligibility result."
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-15-V08",
+    "suite": "functional",
+    "category": "Upgrade eligibility",
+    "turns": [
+      {
+        "message": "Show my current upgrade qualification without ordering a device."
+      }
+    ],
+    "expected": "Use CRM contract and financing rules; do not invent eligibility.",
+    "requirements": [
+      "FR-15"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V01",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "List my recurring bundles and content subscriptions and explain how to cancel."
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V02",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "Which recurring bundles are active on my line?"
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V03",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "List my active VAS subscriptions."
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V04",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "Are caller tunes enabled on my account?"
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V05",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "Which third-party content subscriptions are being charged?"
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V06",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "Explain the approved cancellation method for each active subscription."
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V07",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "Do not cancel a subscription just because I asked for its status."
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-16-V08",
+    "suite": "functional",
+    "category": "Subscriptions",
+    "turns": [
+      {
+        "message": "If I have no active subscriptions, state the actual result."
+      }
+    ],
+    "expected": "Use live subscription list; provide verified cancellation guidance; do not cancel without authorization.",
+    "requirements": [
+      "FR-16"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V01",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Which data and voice offers are available specifically for my account?"
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V02",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Show data offers personalized for my account."
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V03",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Which personalized voice offers are available?"
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V04",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "What are the exact price and validity of each available offer?"
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V05",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Show the conditions attached to the current offer."
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V06",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Do not invent a discount if the offers engine returns none."
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V07",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Explain how I would confirm an offer purchase without buying it now."
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-17-V08",
+    "suite": "functional",
+    "category": "Personalized offers",
+    "turns": [
+      {
+        "message": "Are these offers from my account's recommendation result?"
+      }
+    ],
+    "expected": "Use session-bound NBA offers with exact prices and validity; do not invent discounts or purchase without confirmation.",
+    "requirements": [
+      "FR-17"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "tool_correctness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "FR-18-V01",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "How does MTN data rollover work on prepaid bundles?"
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V02",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "Explain current prepaid roaming policy from the official knowledge base."
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V03",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "How do I complete RICA registration?"
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V04",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "My mobile data is not working; show the approved troubleshooting steps."
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V05",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "What are the current conditions of night-data bundles?"
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V06",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "Can I keep unused bundle data after expiry?"
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V07",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "Quote only verified tariff details from retrieved sources."
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  },
+  {
+    "id": "FR-18-V08",
+    "suite": "functional",
+    "category": "RAG FAQs",
+    "turns": [
+      {
+        "message": "If no current source answers my question, say that clearly."
+      }
+    ],
+    "expected": "Retrieve current approved policy and explain eligibility and validity accurately with no fabricated USSD codes.",
+    "requirements": [
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness",
+      "context_recall",
+      "context_precision",
+      "retrieval_relevancy",
+      "faithfulness"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "rag"
+  }
+]

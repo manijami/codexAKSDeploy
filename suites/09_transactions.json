@@ -1,0 +1,210 @@
+[
+  {
+    "id": "TXN-001",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Check whether my sandbox payment is credited."
+      }
+    ],
+    "expected": "Verify signed success webhook, exact ledger posting and receipt.",
+    "requirements": [
+      "FR-13",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "payment_confirmed",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "TXN-002",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Check whether my sandbox payment is credited."
+      }
+    ],
+    "expected": "Replay sandbox webhook through approved fixture and verify one ledger credit.",
+    "requirements": [
+      "FR-13",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "payment_duplicate",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "TXN-003",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Has my latest sandbox payment been received?"
+      }
+    ],
+    "expected": "Invalid signature webhook is rejected; no credit.",
+    "requirements": [
+      "FR-13",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "payment_invalid_signature",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "TXN-004",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "What happened to my declined sandbox payment?"
+      }
+    ],
+    "expected": "Decline/cancel is handled without success claim or ledger credit.",
+    "requirements": [
+      "FR-13",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "payment_declined",
+    "writes": true,
+    "payment": true
+  },
+  {
+    "id": "TXN-005",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Confirm my pending R200 spend limit change."
+      }
+    ],
+    "expected": "OTP, authorized confirmation, single write and read-back verified.",
+    "requirements": [
+      "FR-09",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "spend_confirmed",
+    "writes": true,
+    "payment": false
+  },
+  {
+    "id": "TXN-006",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Set my monthly spend cap above my approved credit limit."
+      }
+    ],
+    "expected": "Reject above-ceiling update and verify unchanged billing policy.",
+    "requirements": [
+      "FR-09",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "spend_exceeds_credit",
+    "writes": true,
+    "payment": false
+  },
+  {
+    "id": "TXN-007",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Retrieve my PUK after my completed verified challenge."
+      }
+    ],
+    "expected": "Use pre-verified synthetic step-up state; verify expiry, subject and action binding.",
+    "requirements": [
+      "FR-06",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "step_up_success",
+    "writes": false,
+    "payment": false
+  },
+  {
+    "id": "TXN-008",
+    "suite": "transactions",
+    "category": "Transactional sandbox controls",
+    "turns": [
+      {
+        "message": "Retrieve my PUK after my expired verified challenge."
+      }
+    ],
+    "expected": "Expired step-up must fail and require reauthentication.",
+    "requirements": [
+      "FR-06",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "step_up_enforced",
+      "no_unauthorized_write"
+    ],
+    "expected_status": [
+      200
+    ],
+    "fixture": "step_up_expired",
+    "writes": false,
+    "payment": false
+  }
+]

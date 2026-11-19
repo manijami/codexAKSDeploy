@@ -1,0 +1,6 @@
+{
+  "conversationId": "{{conversation_id}}",
+  "msisdn": "{{msisdn}}",
+  "subscriberType": "{{subscriber_type}}",
+  "message": "{{message}}"
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "TURN-001",
+    "suite": "multiturn",
+    "category": "Follow-up balance context",
+    "turns": [
+      {
+        "message": "Show my data balance.",
+        "metrics": []
+      },
+      {
+        "message": "When does that data expire?"
+      }
+    ],
+    "expected": "Resolve follow-up using the same bound subscriber and current source data.",
+    "requirements": [
+      "FR-01",
+      "NFR-02"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "answer_relevancy",
+      "groundedness"
+    ],
+    "expected_status": [
+      200
+    ]
+  },
+  {
+    "id": "TURN-002",
+    "suite": "multiturn",
+    "category": "Topic change",
+    "turns": [
+      {
+        "message": "Show my balances.",
+        "metrics": []
+      },
+      {
+        "message": "How does data rollover work?"
+      }
+    ],
+    "expected": "Switch from live tools to grounded FAQ without leaking prior data.",
+    "requirements": [
+      "FR-01",
+      "FR-18"
+    ],
+    "metrics": [
+      "answer_relevancy",
+      "groundedness"
+    ],
+    "expected_status": [
+      200
+    ]
+  },
+  {
+    "id": "TURN-003",
+    "suite": "multiturn",
+    "category": "Multi-tool orchestration",
+    "turns": [
+      {
+        "message": "Send me my invoice from last month and check if I qualify for an upgrade."
+      }
+    ],
+    "expected": "Use both invoice and upgrade tools and combine results accurately.",
+    "requirements": [
+      "FR-10",
+      "FR-15"
+    ],
+    "metrics": [
+      "tool_correctness",
+      "groundedness",
+      "answer_relevancy"
+    ],
+    "expected_status": [
+      200
+    ],
+    "latency_class": "tool"
+  },
+  {
+    "id": "TURN-004",
+    "suite": "multiturn",
+    "category": "Explicit human request",
+    "turns": [
+      {
+        "message": "Please connect me to a human agent."
+      }
+    ],
+    "expected": "Create/route actual handoff, not only promise it in prose.",
+    "requirements": [
+      "NFR-06"
+    ],
+    "metrics": [
+      "handoff_correctness"
+    ],
+    "expected_status": [
+      200
+    ]
+  }
+]

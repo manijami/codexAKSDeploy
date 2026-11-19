@@ -1,0 +1,31 @@
+.env
+.venv/
+.venv-ragas/
+__pycache__/
+reports/
+evidence/*
+!evidence/README.md
+!evidence/example.template.json
+config/local.json
+*.log
+.DS_Store
+request.private.txt
+*.private.*
+examples/local_demo/
+.pytest_cache/
+
+# Native evaluator environments and deployment-local credentials/artifacts.
+.venv-deepeval/
+.venv-*/
+deploy/aks/*.env
+deploy/aks/*-rendered.*
+# Local subscriber invoice/capture PDFs are not repository assets.
+/*.pdf
+
+# Public-repository boundary: approved private build inputs only.
+sources/business_kb/
+sources/*.docx
+sources/*extracted*
+datasets/business_faq_v1.*
+datasets/faq_pilot.*
+datasets/*.private.json
